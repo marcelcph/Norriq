@@ -2,7 +2,6 @@ import "./App.css";
 import StarsCanvas from "./components/Canvas/Stars";
 import Hero from "./components/Hero/Hero";
 import Cards from "./components/Cards/Cards";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <div className="md:mx-32">
         <Cards />
       </div>
-      <Footer />
     </>
   );
 }
