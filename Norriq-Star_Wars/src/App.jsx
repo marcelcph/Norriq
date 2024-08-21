@@ -1,5 +1,5 @@
 import "./App.css";
-import StarsCanvas from "./components/Hero/Stars";
+import StarsCanvas from "./components/Canvas/Stars";
 import Hero from "./components/Hero/Hero";
 import Cards from "./components/Cards/Cards";
 
