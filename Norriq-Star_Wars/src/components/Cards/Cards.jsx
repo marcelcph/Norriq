@@ -115,26 +115,28 @@ function Cards() {
         {filtreretPeople.map((person, index) => (
           <motion.div
             key={person.url}
-            className="card p-6 text-center bg-accent/50 min-h-32"
+            className="card card-bordered shadow-xl p-6 bg-accent/60 rounded-xl "
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <h2 className="text-3xl font-bold mb-2 text-neutral">
-              {person.name}
-            </h2>
-            <p className="text-neutral text-2xl text-left">
-              Køn: {kønIkon(person.gender)}
-            </p>
-            <p className="text-neutral text-2xl text-left">
-              Fødselsår: {person.birth_year}
-            </p>
-            <p className="text-neutral text-2xl text-left">
-              Højde: {person.height} cm
-            </p>
-            <p className="text-neutral text-2xl text-left">
-              Vægt: {person.mass} kg
-            </p>
+            <div className="card-body text-center">
+              <h2 className="card-title text-3xl font-bold mb-2 text-neutral">
+                {person.name}
+              </h2>
+              <p className="text-neutral text-2xl text-left">
+                Køn: {kønIkon(person.gender)}
+              </p>
+              <p className="text-neutral text-2xl text-left">
+                Fødselsår: {person.birth_year}
+              </p>
+              <p className="text-neutral text-2xl text-left">
+                Højde: {person.height} cm
+              </p>
+              <p className="text-neutral text-2xl text-left">
+                Vægt: {person.mass} kg
+              </p>
+            </div>
           </motion.div>
         ))}
       </div>
