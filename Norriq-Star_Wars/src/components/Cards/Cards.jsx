@@ -40,8 +40,8 @@ function Cards() {
 
   if (loading) {
     return (
-      <div className="flex flex-col justify-center items-center min-h-[100vh]">
-        <span className="loading loading-ring w-96 h-96 text-secondary"></span>
+      <div className="flex flex-col justify-center items-center ">
+        <span className="loading loading-ring w-48 h-48 text-secondary"></span>
         <p className="mt-4 text-2xl font-bold text-secondary">{progress}%</p>
       </div>
     );

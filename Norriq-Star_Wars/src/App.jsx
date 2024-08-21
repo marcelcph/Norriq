@@ -7,11 +7,11 @@ function App() {
   return (
     <>
       <StarsCanvas />
-      <div className="w-screen h-screen ">
+      <div className="">
         <Hero />
       </div>
       <div className="md:mx-32">
-        <Cards id="stjernerne" />
+        <Cards />
       </div>
     </>
   );
