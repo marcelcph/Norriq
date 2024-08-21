@@ -7,7 +7,7 @@ export default {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        Starwars: {
           primary: "ffe81f",
 
           secondary: "#dc2626",
@@ -22,9 +22,6 @@ export default {
 
           success: "#00ffff",
 
-          warning: "#ffffff",
-
-          error: "#ffffff",
         },
       },
     ],

@@ -1,11 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/star-wars');
-
-.starwarsfont {
-  font-family: 'Star Wars', sans-serif;
-  white-space: preline;
+*{
+  scroll-behavior: smooth;
 }
+
 
 .text-outline {
   -webkit-text-stroke: 0.5px theme('colors.primary'); 
   color: transparent; 
 }
+

@@ -9,13 +9,14 @@ const Stars = (props) => {
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
 
+  // Stjernerne bevæger sig, men kameraet gør ikke
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
+    <group>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
@@ -31,8 +32,8 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
+    <div className="w-full h-full fixed top-0 left-0 z-[-1]">
+      <Canvas camera={{ position: [0, 0, 1], rotation: [0, 0, 0] }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
