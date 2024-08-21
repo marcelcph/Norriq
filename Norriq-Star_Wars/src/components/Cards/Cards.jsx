@@ -82,7 +82,7 @@ function Cards() {
       <div className="flex flex-wrap justify-center mb-4 gap-2">
         <h1 className="text-3xl font-bold text-neutral">Filtre:</h1>
         <button
-          className={`btn w-full sm:w-auto ${
+          className={`btn w-full sm:w-auto text-neutral ${
             filter === "alle" ? "btn-secondary" : ""
           }`}
           onClick={() => setFilter("alle")}
@@ -90,7 +90,7 @@ function Cards() {
           Vis alle
         </button>
         <button
-          className={`btn w-full sm:w-auto ${
+          className={`btn w-full sm:w-auto text-neutral ${
             filter === "mand" ? "btn-secondary" : ""
           }`}
           onClick={() => setFilter("mand")}
@@ -98,7 +98,7 @@ function Cards() {
           Vis kun mænd
         </button>
         <button
-          className={`btn w-full sm:w-auto ${
+          className={`btn w-full sm:w-auto text-neutral ${
             filter === "kvinde" ? "btn-secondary" : ""
           }`}
           onClick={() => setFilter("kvinde")}
@@ -106,7 +106,7 @@ function Cards() {
           Vis kun kvinder
         </button>
         <button
-          className={`btn w-full sm:w-auto ${
+          className={`btn w-full sm:w-auto text-neutral ${
             filter === "alder" ? "btn-secondary" : ""
           }`}
           onClick={() => setFilter("alder")}
@@ -115,7 +115,7 @@ function Cards() {
         </button>
         {/* Juster dette div */}
         <div className="flex justify-end w-full mt-4">
-          <p>Layout: </p>
+          <p className="text-lg">Layout: </p>
           <button
             className="w-full sm:w-auto flex items-center "
             onClick={() =>
