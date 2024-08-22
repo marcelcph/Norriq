@@ -46,7 +46,7 @@ function Cards() {
       <div className="flex flex-col justify-center items-center ">
         <span className="loading loading-ring w-48 h-48 text-secondary"></span>
         <p className="mt-4 text-2xl font-bold text-secondary">{progress}%</p>
-        <h1 className="text-teal-400 text-2xl mt-12 font-semibold">
+        <h1 className="text-teal-400 text-2xl mt-12 font-semibold text-center">
           Henter stjernerne fra en galakse langt herfra...
         </h1>
       </div>
