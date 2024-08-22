@@ -46,6 +46,9 @@ function Cards() {
       <div className="flex flex-col justify-center items-center ">
         <span className="loading loading-ring w-48 h-48 text-secondary"></span>
         <p className="mt-4 text-2xl font-bold text-secondary">{progress}%</p>
+        <h1 className="text-teal-400 text-2xl mt-12 font-semibold">
+          Henter stjernerne fra en galakse langt herfra...
+        </h1>
       </div>
     );
   }
@@ -166,7 +169,6 @@ function Cards() {
           <table className="table table-zebra w-full">
             <thead>
               <tr className="bg-accent text-neutral">
-                <th>#</th>
                 <th>Navn</th>
                 <th>Køn</th>
                 <th>Fødselsår</th>
@@ -175,9 +177,8 @@ function Cards() {
               </tr>
             </thead>
             <tbody>
-              {filtreretPeople.map((person, index) => (
+              {filtreretPeople.map((person) => (
                 <tr key={person.url}>
-                  <th>{index + 1}</th>
                   <td>{person.name}</td>
                   <td>{kønIkon(person.gender)}</td>
                   <td>{person.birth_year}</td>
