@@ -116,7 +116,7 @@ function Cards() {
         >
           Vis kun personer mellem 20 og 40 BBY
         </button>
-        {/* Juster dette div */}
+        
         <div className="flex justify-end w-full mt-4">
           <p className="text-lg">Layout: </p>
           <button
