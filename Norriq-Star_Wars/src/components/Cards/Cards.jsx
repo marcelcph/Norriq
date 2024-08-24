@@ -116,7 +116,7 @@ function Cards() {
         >
           Vis kun personer mellem 20 og 40 BBY
         </button>
-        
+
         <div className="flex justify-end w-full mt-4">
           <p className="text-lg">Layout: </p>
           <button
@@ -139,7 +139,7 @@ function Cards() {
           {filtreretPeople.map((person, index) => (
             <motion.div
               key={person.url}
-              className="card card-bordered shadow-xl p-6 bg-accent/60 rounded-xl"
+              className="card card-bordered shadow-xl p-6 bg-secondary/60 rounded-xl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
