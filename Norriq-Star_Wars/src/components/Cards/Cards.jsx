@@ -166,9 +166,9 @@ function Cards() {
         </div>
       ) : (
         <div className="overflow-x-auto">
-          <table className="table table-zebra w-full">
+          <table className="table w-full rounded-xl">
             <thead>
-              <tr className="bg-accent text-neutral">
+              <tr className="bg-secondary  text-neutral">
                 <th>Navn</th>
                 <th>Køn</th>
                 <th>Fødselsår</th>
